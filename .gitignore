@@ -1,0 +1,48 @@
+# ------------------------------------
+# 1. Dependency Directories
+# ------------------------------------
+# Node.js module folder
+/node_modules
+
+# Logs
+npm-debug.log*
+.npm
+.nvm
+.pnpm-store
+
+# ------------------------------------
+# 2. Build & Temporary Files
+# ------------------------------------
+# Production builds and temporary files
+/dist
+/build
+/temp
+/tmp
+
+# ------------------------------------
+# 3. Environment & Configuration
+# ------------------------------------
+# **CRUCIAL: Do not commit your secrets!**
+#.env
+#.env.*
+/.DS_Store
+
+# ------------------------------------
+# 4. Docker Specific
+# ------------------------------------
+# Docker's build context directory
+.dockerignore
+
+# Docker volumes (if locally mounted)
+# This is less common but can be useful
+/data
+
+# ------------------------------------
+# 5. IDE Specific (VS Code example)
+# ------------------------------------
+.vscode/
+
+# ------------------------------------
+# 6. Testing & Coverage
+# ------------------------------------
+/coverage
