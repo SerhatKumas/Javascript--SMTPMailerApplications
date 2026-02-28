@@ -9,7 +9,7 @@ const PORT = process.env.PORT || 3000; // Uses environment variable if set, othe
 // These are fundamental middlewares that most Express applications need to handle common web development scenarios
 app.use(cors());
 app.use(express.json());
-app.use(express.static('public')); // This tells my static file like HTML CSS and JS files are in public file
+app.use(express.static(path.join(__dirname, '../public'))); // This tells my static file like HTML CSS and JS files are in public file
 
 // Environment variables from .env file are injected into the code
 const smtpConfig = {
@@ -139,7 +139,7 @@ app.post('/send-email', async (req, res) => {
 
 // Serve HTML form
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'contact.html'));
+  res.sendFile(path.join(__dirname, '../public', 'contact.html'));
 });
 
 // It starts the server and makes it accessible

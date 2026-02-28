@@ -2,10 +2,10 @@
   "name": "mail-system",
   "version": "1.0.0",
   "description": "Simple contact form mailer",
-  "main": "server.js",
+  "main": "backend/server.js",
   "scripts": {
-    "start": "node server.js",
-    "dev": "node -r dotenv/config server.js"
+    "start": "node backend/server.js",
+    "dev": "node -r dotenv/config backend/server.js"
   },
   "dependencies": {
     "express": "^4.18.2",

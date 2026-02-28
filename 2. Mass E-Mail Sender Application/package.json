@@ -1,0 +1,35 @@
+{
+    "name": "mass-mail-sender",
+    "version": "1.0.0",
+    "type": "module",
+    "scripts": {
+        "start": "node backend/server.js",
+        "dev:backend": "node --watch backend/server.js",
+        "dev:frontend": "cd frontend && vite",
+        "build:frontend": "cd frontend && vite build",
+        "lint:frontend": "cd frontend && eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+        "preview:frontend": "cd frontend && vite preview",
+        "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\""
+    },
+    "dependencies": {
+        "concurrently": "^8.2.2",
+        "cors": "^2.8.5",
+        "dotenv": "^16.4.5",
+        "express": "^4.19.2",
+        "multer": "^1.4.5-lts.1",
+        "nodemailer": "^6.9.13",
+        "lucide-react": "^0.378.0",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0"
+    },
+    "devDependencies": {
+        "@types/react": "^18.2.66",
+        "@types/react-dom": "^18.2.22",
+        "@vitejs/plugin-react": "^4.2.1",
+        "eslint": "^8.57.0",
+        "eslint-plugin-react": "^7.34.1",
+        "eslint-plugin-react-hooks": "^4.6.0",
+        "eslint-plugin-react-refresh": "^0.4.6",
+        "vite": "^5.2.0"
+    }
+}
